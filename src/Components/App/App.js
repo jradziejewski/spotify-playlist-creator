@@ -7,6 +7,8 @@ export class App extends React.Component {
                 <h1>
                     Quick<span className="highlight">Spoti hej</span>Playlist
                     {/* test comment */}
+                    {/* test comment */}
+                    {/* test comment */}
                 </h1>
             </div>
         );
