@@ -24,6 +24,57 @@ const Spotify = {
             window.location = accessUrl;
         }
     },
+
+    search(term) {
+        const token = Spotify.getAccessToken();
+        return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        })
+            .then((response) => {
+                return response.json();
+            })
+            .then((jsonResponse) => {
+                if (!jsonResponse.tracks) return [];
+                return jsonResponse.tracks.items.map((track) => ({
+                    id: track.id,
+                    name: track.name,
+                    artist: track.artists[0].name,
+                    album: track.album.name,
+                    uri: track.uri,
+                }));
+            });
+    },
+    savePlaylist(playlistName, trackURIs) {
+        if (!playlistName || !trackURIs) return;
+        const token = Spotify.getAccessToken();
+        const headers = { Authorization: `Bearer ${token}` };
+        let userID;
+
+        return fetch('https://api.spotify.com/v1/me', { headers: headers })
+            .then((response) => response.json())
+            .then((jsonResponse) => {
+                userID = jsonResponse.id;
+                return fetch(`https://api.spotify.com/v1/users/${userID}/playlists`, {
+                    headers: headers,
+                    method: 'POST',
+                    body: JSON.stringify({ name: playlistName }),
+                })
+                    .then((response) => response.json())
+                    .then((jsonResponse) => {
+                        const playlistID = jsonResponse.id;
+                        return fetch(
+                            `https://api.spotify.com/v1/users/${userID}/playlists/${playlistID}/tracks`,
+                            {
+                                headers: headers,
+                                method: 'POST',
+                                body: JSON.stringify({ uris: trackURIs }),
+                            },
+                        );
+                    });
+            });
+    },
 };
 
 export default Spotify;
