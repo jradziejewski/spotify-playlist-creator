@@ -1,0 +1,52 @@
+@import 'src/_variables.scss';
+
+body,
+html,
+#root {
+    height: 100%;
+}
+
+html {
+    font-size: 18px;
+}
+
+h1 {
+    padding: 0.77rem 0;
+    background-color: $background-color;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.88rem;
+    color: $primary-text;
+    &.highlight {
+        color: #6c41ec;
+    }
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+}
+
+.App {
+    height: 100%;
+    padding: 0 17% 10% 17%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: $primary-text;
+}
+
+.App-playlist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+    .App-playlist {
+        align-items: center;
+        flex-direction: column;
+    }
+}

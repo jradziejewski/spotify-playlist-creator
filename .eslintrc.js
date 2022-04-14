@@ -21,6 +21,12 @@ module.exports = {
     },
     plugins: ['react', 'jsx-a11y', '@typescript-eslint'],
     rules: {
+        'prettier/prettier': [
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
         'react-hooks/exhaustive-deps': 'error',
         'no-var': 'error',
         'brace-style': 'error',
