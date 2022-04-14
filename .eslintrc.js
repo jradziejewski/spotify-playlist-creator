@@ -21,6 +21,7 @@ module.exports = {
     },
     plugins: ['react', 'jsx-a11y', '@typescript-eslint'],
     rules: {
+        'react/prop-types': 'off',
         'prettier/prettier': [
             'error',
             {
