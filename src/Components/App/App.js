@@ -8,6 +8,8 @@ export class App extends React.Component {
     constructor(props) {
         super(props);
         this.addTrack = this.addTrack.bind(this);
+        this.removeTrack = this.removeTrack.bind(this);
+
         this.state = {
             searchResults: [
                 { name: 'name4', artist: 'artist4', album: 'album4', id: 4 },
@@ -33,6 +35,13 @@ export class App extends React.Component {
         }
     }
 
+    removeTrack(track) {
+        let tracks = this.state.playlistTracks;
+        this.setState({
+            playlistTracks: tracks.filter((current) => current.id !== track.id),
+        });
+    }
+
     render() {
         return (
             <div>
@@ -49,6 +58,7 @@ export class App extends React.Component {
                         <Playlist
                             playlistName={this.state.playlistName}
                             playlistTracks={this.state.playlistTracks}
+                            onRemove={this.removeTrack}
                         />
                     </div>
                 </div>
