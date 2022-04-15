@@ -5,11 +5,12 @@
     flex-direction: column;
     align-items: center;
     padding-top: 6.94rem;
-    margin-bottom: 6.33rem;
+    margin-bottom: 2.33rem;
     & input {
         width: 287px;
         padding: 0.88rem 0;
-        border: 1px solid $primary-green;
+        border: 1px solid $primary-text;
+        background-color: hsl(20, 10, 99);
         border-radius: 3px;
         margin-bottom: 2.22rem;
         color: #010c3f;
@@ -19,6 +20,9 @@
             outline: none;
         }
     }
+    & p {
+        color: $primary-text;
+    }
 }
 
 .SearchButton {
@@ -26,13 +30,15 @@
     width: 8.11rem;
     padding: 0.77rem 0;
     border-radius: 54px;
+    margin-bottom: 1rem;
     background-color: $button-primary;
     text-align: center;
     font-size: 0.833rem;
     transition: background-color 0.25s;
     border: 0px;
-    color: #fff;
+    color: $primary-text;
     font-weight: 500;
+    border: 1px solid black;
     &:hover {
         background-color: $button-hover;
     }
