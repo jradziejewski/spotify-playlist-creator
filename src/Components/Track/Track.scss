@@ -3,7 +3,7 @@
 .Track {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+    border-bottom: 1px solid black;
 }
 
 .Track-action {
@@ -16,6 +16,13 @@
     color: $primary-text;
     &:hover {
         color: rgba(265, 265, 265, 0.5);
+    }
+}
+
+.Track-image {
+    margin: 1rem;
+    & img {
+        border-radius: 10px;
     }
 }
 

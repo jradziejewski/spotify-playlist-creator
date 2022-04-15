@@ -1,5 +1,11 @@
 @import 'src/_variables.scss';
 
+*,
+*::before,
+*::after {
+    margin: 0;
+}
+
 body,
 html,
 #root {
@@ -42,6 +48,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.App {
+    margin-top: -5rem;
 }
 
 @media only screen and (max-width: 1020px) {
