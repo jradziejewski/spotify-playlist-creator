@@ -2,7 +2,7 @@ import { config } from '../config.js';
 
 let token;
 const clientID = config.clientID;
-const redirectURI = 'http://localhost:3000/';
+const redirectURI = 'https://jradziejewski.github.io/spotify-playlist-creator/';
 
 const Spotify = {
     getAccessToken() {
