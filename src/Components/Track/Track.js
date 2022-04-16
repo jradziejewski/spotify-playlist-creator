@@ -59,9 +59,9 @@ export class Track extends React.Component {
                 </div>
                 <button className="Track-play" onClick={this.playPause}>
                     {this.state.isPlaying ? (
-                        <img src="./circle-stop-solid.svg" alt="Stop" />
+                        <img src="circle-stop-solid.svg" alt="Stop" />
                     ) : (
-                        <img src="./circle-play-solid.svg" alt="Play" />
+                        <img src="circle-play-solid.svg" alt="Play" />
                     )}
                 </button>
                 {this.renderAction()}
