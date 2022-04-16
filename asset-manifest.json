@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spotify-playlist-creator/static/css/main.ae7e82fd.css",
+    "main.js": "/spotify-playlist-creator/static/js/main.0b6f3a6c.js",
+    "index.html": "/spotify-playlist-creator/index.html",
+    "main.ae7e82fd.css.map": "/spotify-playlist-creator/static/css/main.ae7e82fd.css.map",
+    "main.0b6f3a6c.js.map": "/spotify-playlist-creator/static/js/main.0b6f3a6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae7e82fd.css",
+    "static/js/main.0b6f3a6c.js"
+  ]
+}
