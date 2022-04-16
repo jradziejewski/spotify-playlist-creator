@@ -28,6 +28,11 @@ export class App extends React.Component {
             let tracks = this.state.playlistTracks;
             tracks.push(track);
             this.setState({ playlistTracks: tracks });
+            this.setState({
+                searchResults: this.state.searchResults.filter(
+                    (result) => !this.state.playlistTracks.includes(result),
+                ),
+            });
         }
     }
 

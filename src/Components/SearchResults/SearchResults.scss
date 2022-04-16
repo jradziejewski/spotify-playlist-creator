@@ -5,9 +5,8 @@
     height: 950px;
     overflow-y: scroll;
     padding: 0.88rem;
-    background-color: $background-color;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: $list-background;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border-radius: 10px;
 }
 

@@ -25,6 +25,7 @@ export class SearchBar extends React.Component {
                 <button className="SearchButton" onClick={this.search}>
                     SEARCH
                 </button>
+                <p>Note: first click on Search button is used for authorization.</p>
             </div>
         );
     }

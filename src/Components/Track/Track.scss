@@ -2,20 +2,62 @@
 
 .Track {
     display: flex;
+    background-color: $track-background;
+    padding: 0 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
     align-items: center;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-bottom: 1px solid $primary-text;
 }
 
 .Track-action {
+    all: unset;
     cursor: pointer;
-    padding: 0.5rem;
-    font-size: 1.05rem;
-    transition: color 0.25s;
-    border: 0px;
-    background-color: $background-color;
-    color: $primary-text;
+    margin-left: 0.5rem;
+    padding: 0.25rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-text;
+    background-color: $button-primary;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
     &:hover {
-        color: rgba(265, 265, 265, 0.5);
+        background-color: $button-hover;
+    }
+}
+
+.Track-image {
+    margin: 1rem;
+    & img {
+        border-radius: 10px;
+    }
+}
+
+.Track-play {
+    all: unset;
+    padding: 0.25rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-text;
+    background-color: $button-primary;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    & img {
+        width: 20px;
+        height: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $button-hover;
     }
 }
 
@@ -32,5 +74,14 @@
         font-size: 0.83rem;
         font-weight: 300;
         color: $primary-text;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    h4 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.7rem;
     }
 }
