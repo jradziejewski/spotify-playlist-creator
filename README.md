@@ -1,9 +1,7 @@
 ![background](https://user-images.githubusercontent.com/99597338/164945678-807ea601-bf49-4e5b-b5fc-9eca7172d079.png?raw=true "EasySpotiPlaylist")
 # EasySpotiPlaylist - Spotify playlist creating tool
 
-# -
-[WEBSITE](https://jradziejewski.github.io/spotify-playlist-creator/)
-# -
+# [WEBSITE](https://jradziejewski.github.io/spotify-playlist-creator/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It's based on Codecademy "Jammming" project.
 
