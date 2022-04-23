@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ##Search for your favorite songs
 
 ###Authorize your Spotify account by clicking "Search" button, and then search for your favorite music.
-![search](https://user-images.githubusercontent.com/99597338/164945744-9005cf8e-210c-494b-bed0-776fa8428e16.png | width=200)
+<img src="https://user-images.githubusercontent.com/99597338/164945744-9005cf8e-210c-494b-bed0-776fa8428e16.png" width="200">
 
 ###Scroll through search results and choose songs you like.
 ![search results](https://user-images.githubusercontent.com/99597338/164945759-5f11c282-4c91-400d-aa56-35da8afe20ee.png | width=200)
