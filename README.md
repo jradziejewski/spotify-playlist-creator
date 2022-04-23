@@ -3,6 +3,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It's based on Codecademy "Jammming" project.
 
+## IMPORTANT - Development Mode
+App is still in development mode, which unfortunately means that due to Spotify restrictions, only manually added users can use app. If you wish to use the app, please provide me your e-mail adress.
+
+## Description
+
+App is designed to simplify process of creating Spotify playlists. Simply authorize your Spotify account by clicking "Search" button for the first time, then search for songs you'd like to add to your playlist, choose name for your playlist and click "Save to Spotify" - a new Spotify playlist will appear on your account.
+
 ## Search for your favorite songs
 
 ### Authorize your Spotify account by clicking "Search" button, and then search for your favorite music. <br />
@@ -22,8 +29,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <img src="https://user-images.githubusercontent.com/99597338/164945842-e8069cf9-4026-438f-b437-3bdff3740059.png" width="500">
 
 
-## Description
 
-App is designed to simplify process of creating Spotify playlists. Simply authorize your Spotify account by clicking "Search" button for the first time, then search for songs you'd like to add to your playlist, choose name for your playlist and click "Save to Spotify" - a new Spotify playlist will appear on your account.
 
 
